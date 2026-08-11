@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./favicon.ico" sizes="28x32" type="image/x-icon">
+    <link href="./styles.css" rel="stylesheet">
+
+    <title>Learn ROS2 Jazzy</title>
+    <style>
+        .description {
+            display: flex;
+            flex-direction: column;
+            font-size: x-large;
+            opacity: 0;
+            text-align: left;
+            max-width: 90vw;
+            font-weight: 200;
+            padding-top: 4vh;
+            margin: 0px 5vw;
+        }
+
+        .description ul {
+            list-style-type: square;
+        }
+
+        .description li {
+            padding-bottom: 2vh;
+        }
+
+        .imageHeader {
+            display: flex;
+            align-self: center;
+            flex-direction: row;
+            max-height: 100vh;
+            min-width: 100vw;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+        }
+
+        .imageHeader img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <a href="./index.html">Terraformers Software Onboarding</a>
+        </div>
+
+        <div class="right">
+            <a href="./index.html" target="_blank"> Home</a>
+            <a href="./about.html" target="_blank"> About the Team</a>
+            <a href="./setup.html" target="_blank"> Setting Up Your Development Environment</a>
+
+        </div>
+    </nav>
+    <div class="mainContainer">
+        <h1 id="type1" style="font-weight: 300; "></h1>
+        <div class="description" id="description">
+            <p> ROS2 Jazzy is a version of ROS (Robot Operating System). Despite its name, ROS is NOT an operating
+                system. It is an open-source suite of software framemworks developed by the Open Source Robotics
+                Foundation (OSRF) for robot software development.</p>
+
+            <p> Our main use of ROS2 is to split different aspects of our robot's code into unique packages that can
+                communicate to each other (through publishing messages to and subscribing to topics).</p>
+
+            <div class="imageHeader">
+                <img src="Example_ROS2_Architecture.webp" alt="a diagram showing an example ROS2 architecture">
+            </div>
+            <h2 style="font-weight: 200; ">Recommended Tutorials</h2>
+            <p> The best way to learn ROS2 is to run through the following official ROS2 Jazzy tutorials in order.</p>
+            <p>
+                <bold> You must have completed at least steps 1 and 2 of <a href="./setup.html" target="_blank">Setting
+                        Up Your Development Environment</a> before proceeding.</bold>
+            </p>
+
+            <ol>
+                <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html"
+                        target="_blank">Configuring ROS2 Environment</a></li>
+                <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html"
+                        target="_blank">Introducing Turtlesim</a></li>
+                <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html"
+                        target="_blank">Understanding ROS2 Nodes</a></li>
+                <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html"
+                        target="_blank">Understanding ROS2 Topics</a></li>
+                <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html"
+                        target="_blank">Understanding ROS2 Services</a></li>
+                <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Launching-Multiple-Nodes/Launching-Multiple-Nodes.html"
+                        target="_blank">Launching Multiple Nodes</a></li>
+                <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html"
+                        target="_blank">Creating a Workspace</a></li>
+                <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html"
+                        target="_blank"> Creating Your First ROS2 Package</a></li>
+                <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html"
+                        target="_blank">Writing a Simple Publisher and Subscriber (C++)</a></li>
+                <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Service-And-Client.html"
+                        target="_blank">Writing a Simple Service and Client (C++)</a></li>
+                <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html"
+                        target="_blank">Creating Custom Msg and Srv Files</a></li>
+
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="main.js"></script>
+
+<script>
+    loadLearnROS();
+</script>

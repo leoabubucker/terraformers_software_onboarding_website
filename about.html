@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./favicon.ico" sizes="28x32" type="image/x-icon">
+    <link href="./styles.css" rel="stylesheet">
+
+    <title>About Terraformers</title>
+    <style>
+        .imageHeader {
+            display: flex;
+            flex-direction: row;
+            max-height: 40vh;
+            min-width: 100vw;
+            justify-content: space-evenly;
+            opacity: 0;
+        }
+
+        .imageHeader img {
+            max-height: 100%;
+            max-width: 50%;
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            font-size: x-large;
+            opacity: 0;
+            text-align: left;
+            min-width: 80vw;
+            font-weight: 200;
+            padding-top: 4vh;
+        }
+
+        .description ul {
+            list-style-type: square;
+        }
+
+        .description li {
+            padding-bottom: 2vh;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <a href="./index.html">Terraformers Software Onboarding</a>
+        </div>
+
+        <div class="right">
+            <a href="./index.html" target="_blank"> Home</a>
+            <a href="./about.html" target="_blank"> About the Team</a>
+            <a href="./setup.html" target="_blank"> Setting Up Your Development Environment </a>
+
+        </div>
+    </nav>
+    <div class="mainContainer">
+        <h1 id="type1" style="font-weight: 300; "></h1>
+        <div class="imageHeader">
+            <img src="terraformers.webp" alt="A Picture of the Rover">
+            <img src="terraformers_1.webp" alt="A Picture of the Team From Spring 2026">
+        </div>
+
+        <div class="description" id="description">
+            <ul>
+                <li>Established in 2023 as the research project of a PhD student, now a full-blown student organization
+                    with 30+ members</li>
+                <li> Building a full-scale Mars rover from scratch to compete in the Canadian International Rover
+                    Challenge (CIRC) and the University Rover Challenge (URC)</li>
+            </ul>
+            <h3 style="font-weight: 200;"> Our Sub-Teams</h3>
+            <p>
+                <bold>You must <a href="./setup.html" target="_blank">Setup Your Development Environment</a> before
+                    starting onboarding assignments</bold>
+            </p>
+            <ul>
+                <li>Sensors & Navigation: Interfacing with a GPS and IMU sensor to power autonomous navigation
+                    algorithms and guide user-control<p style="font-style: italic; color: #94A3B8;">(ROS2, C++, C)</p>
+                    <a>View Onboarding Assignment</a>
+                </li>
+                <li>Computer Vision: Interfacing with a camera and applying machine learning algorithms to provide
+                    obstacle detection, aruco marker detection, and depth sensing<p
+                        style="font-style: italic; color: #94A3B8;">(ROS2, C++, Python)</p><a>View Onboarding
+                        Assignment</a> </li>
+                <li>Embedded: Programming motors to drive our rover and its mechanisms including a six-degree-of-freedom
+                    manipulator arm and various scientific instruments <p style="font-style: italic; color: #94A3B8;">
+                        (ROS2, C++, C, STM32)</p><a>View Onboarding Assignment</a></li>
+                <li>User Interface: Developing a web-based UI that has 2-way communication with the rover to control it
+                    and visualize its sensor readings in real-time<p style="font-style: italic; color: #94A3B8;">(ROS2,
+                        HTML, CSS, JS)</p><a>View Onboarding Assignment</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="main.js"></script>
+
+<script>
+    loadAbout();
+</script>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./favicon.ico" sizes="28x32" type="image/x-icon">
+    <link href="./styles.css" rel="stylesheet">
+
+    <title>Terraformers - Placement Survey</title>
+    <style>
+        .question {
+            font-size: medium;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .question label {
+            padding-bottom: 5px;
+            font-size: larger;
+        }
+
+        button {
+            margin: 20px 0px;
+        }
+
+        .surveyResultsPopup {
+            display: none;
+            top: 30%;
+            right: 25%;
+            left: 25%;
+            height: 50vh;
+            width: 50vw;
+            background-color: #1E293B;
+            position: absolute;
+            padding-inline: 20px;
+            flex-direction: column;
+        }
+
+        .surveyResultsPopup h2 {
+            align-self: center;
+        }
+
+        .surveyResultsPopup p {
+            font-size: large;
+        }
+
+        .overlay {
+            min-width: 100vw;
+            min-height: 100vh;
+            position: absolute;
+            background-color: #0F172A;
+            opacity: 0.8;
+            display: none;
+        }
+
+        .subContainer {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <a href="./index.html">Terraformers Software Onboarding</a>
+        </div>
+
+        <div class="right">
+            <a href="./index.html" target="_blank"> Home</a>
+            <a href="./about.html" target="_blank"> About the Team</a>
+            <a href="./setup.html" target="_blank"> Setting Up Your Development Environment </a>
+        </div>
+    </nav>
+    <div class="mainContainer">
+        <div class="overlay"></div>
+        <h1 id="type1" style="font-weight: 300; "></h1>
+        <div class="subContainer">
+
+            <h2 style="font-weight: 300;"> Terraformers accepts <bold>all</bold> interested UMD undergrads and grads.
+                This
+                is a <bold>survey</bold> to better guide your onboarding process and <bold>not</bold> an
+                application.<br> Your <bold>honesty</bold> will help you have a better onboarding process.</h2>
+
+            <form id="survey">
+                <div class="question">
+                    <h3>1. Which programming/scripting languages do you have at least a beginner knowledge of?</h3>
+
+                    <label><input type="checkbox" name="q1" value="C++"> C++</label>
+                    <label><input type="checkbox" name="q1" value="C"> C</label>
+                    <label><input type="checkbox" name="q1" value="Python"> Python</label>
+                    <label><input type="checkbox" name="q1" value="Java"> Java</label>
+                    <label><input type="checkbox" name="q1" value="HTML"> HTML</label>
+                    <label><input type="checkbox" name="q1" value="CSS"> CSS</label>
+                    <label><input type="checkbox" name="q1" value="JS"> JS</label>
+                    <label><input type="checkbox" name="q1" value="Scratch"> Scratch</label>
+                    <label><input type="checkbox" name="q1" value="None"> None</label>
+                </div>
+                <div class="question">
+                    <h3>2. Which programming/scripting languages do you have at least an intermediate knowledge of?</h3>
+
+                    <label><input type="checkbox" name="q2" value="C++"> C++</label>
+                    <label><input type="checkbox" name="q2" value="C"> C</label>
+                    <label><input type="checkbox" name="q2" value="Python"> Python</label>
+                    <label><input type="checkbox" name="q2" value="Java"> Java</label>
+                    <label><input type="checkbox" name="q2" value="HTML"> HTML</label>
+                    <label><input type="checkbox" name="q2" value="CSS"> CSS</label>
+                    <label><input type="checkbox" name="q2" value="JS"> JS</label>
+                    <label><input type="checkbox" name="q2" value="Scratch"> Scratch</label>
+                    <label><input type="checkbox" name="q2" value="None"> None</label>
+                </div>
+                <div class="question">
+                    <h3>3. Which programming/scripting languages do you have an advanced knowledge of?</h3>
+
+                    <label><input type="checkbox" name="q3" value="C++"> C++</label>
+                    <label><input type="checkbox" name="q3" value="C"> C</label>
+                    <label><input type="checkbox" name="q3" value="Python"> Python</label>
+                    <label><input type="checkbox" name="q3" value="Java"> Java</label>
+                    <label><input type="checkbox" name="q3" value="HTML"> HTML</label>
+                    <label><input type="checkbox" name="q3" value="CSS"> CSS</label>
+                    <label><input type="checkbox" name="q3" value="JS"> JS</label>
+                    <label><input type="checkbox" name="q3" value="Scratch"> Scratch</label>
+                    <label><input type="checkbox" name="q3" value="None"> None</label>
+                </div>
+                <div class="question">
+                    <h3>4. What is your experience with ROS2</h3>
+
+                    <label><input type="radio" name="q4" value="0"> I don't know what that is</label>
+                    <label><input type="radio" name="q4" value="1"> I've heard of it, but I don't know how to use
+                        it</label>
+                    <label><input type="radio" name="q4" value="2"> I have beginner experience with it</label>
+                    <label><input type="radio" name="q4" value="3"> I have intermediate experience with it</label>
+                    <label><input type="radio" name="q4" value="4"> I have advanced experience with it</label>
+                </div>
+                <div class="question">
+                    <h3>5. What is your experience with Arduino or STM32</h3>
+
+                    <label><input type="radio" name="q5" value="0"> I don't know what those are</label>
+                    <label><input type="radio" name="q5" value="1"> I've heard of it, but I don't know how to use
+                        them</label>
+                    <label><input type="radio" name="q5" value="2"> I have beginner experience with one/both of
+                        them</label>
+                    <label><input type="radio" name="q5" value="3"> I have intermediate experience with one/both of
+                        them</label>
+                    <label><input type="radio" name="q5" value="4"> I have advanced experience with one/both of
+                        them</label>
+                </div>
+                <div class="question">
+                    <h3>6. What is your experience with {VISION TOOLS}</h3>
+
+                    <label><input type="radio" name="q6" value="0"> I don't know what that is</label>
+                    <label><input type="radio" name="q6" value="1"> I've heard of it, but I don't know how to use
+                        it</label>
+                    <label><input type="radio" name="q6" value="2"> I have beginner experience with it</label>
+                    <label><input type="radio" name="q6" value="3"> I have intermediate experience with it</label>
+                    <label><input type="radio" name="q6" value="4"> I have advanced experience with it</label>
+                </div>
+
+                <div class="question">
+                    <h3>7. What is your experience with Serial Communication</h3>
+
+                    <label><input type="radio" name="q7" value="0"> I don't know what that is</label>
+                    <label><input type="radio" name="q7" value="1"> I've heard of it, but I don't know how to use
+                        it</label>
+                    <label><input type="radio" name="q7" value="2"> I have beginner experience with it</label>
+                    <label><input type="radio" name="q7" value="3"> I have intermediate experience with it</label>
+                    <label><input type="radio" name="q7" value="4"> I have advanced experience with it</label>
+                </div>
+
+                <div class="question">
+                    <h3>8. What is your experience with programming sensors such as GPS and IMU?</h3>
+
+                    <label><input type="radio" name="q8" value="0"> I don't know what those are</label>
+                    <label><input type="radio" name="q8" value="1"> I've heard of those, but I don't know how to use
+                        them</label>
+                    <label><input type="radio" name="q8" value="2"> I have beginner experience with them</label>
+                    <label><input type="radio" name="q8" value="3"> I have intermediate experience with them</label>
+                    <label><input type="radio" name="q8" value="4"> I have advanced experience with them</label>
+                </div>
+                <div class="question">
+                    <h3>9. What is your experience with ROSLIB JS?</h3>
+
+                    <label><input type="radio" name="q9" value="0"> I don't know what this is</label>
+                    <label><input type="radio" name="q9" value="1"> I've heard of this, but I don't know how to use
+                        it</label>
+                    <label><input type="radio" name="q9" value="2"> I have beginner experience with this</label>
+                    <label><input type="radio" name="q9" value="3"> I have intermediate experience with this</label>
+                    <label><input type="radio" name="q9" value="4"> I have advanced experience with this</label>
+                </div>
+
+                <div class="question">
+                    <h3>10. What sub-team interests you the most. Pick your favorite right now (you can always change
+                        later).
+                        <a href="./about.html#description" target="_blank">See options here.</a>
+                    </h3>
+
+                    <label><input type="radio" name="q10" value="Sensors & Navigation"> Sensors & Navigation</label>
+                    <label><input type="radio" name="q10" value="Computer Vision"> Computer Vision</label>
+                    <label><input type="radio" name="q10" value="Embedded"> Embedded</label>
+                    <label><input type="radio" name="q10" value="User Interface"> User Interface</label>
+                </div>
+                <button type="submit" class="button">Submit</button>
+            </form>
+
+            <div class="surveyResultsPopup">
+                <h2> Thank you for filling out this survey</h2>
+                <p style="text-align: center;">
+                    <bold>Please take note of your below results before exiting this popup as your results are not saved
+                    </bold>
+                </p>
+                <p id="preference"></p>
+                <p id="startingPoint"></p>
+                <p id="recommendedTeam"></p>
+                <p>The below scores (0 = little application, 4 = high application) are your prior experience as it is
+                    applicable in each sub-team's tasks. This does not mean that you are required to join this sub-team.
+                </p>
+                <p id="embedded"></p>
+                <p id="sensors"></p>
+                <p id="vision"></p>
+                <p id="ui"></p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="main.js"></script>
+
+<script>
+    loadSurvey();
+</script>
