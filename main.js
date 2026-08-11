@@ -128,6 +128,9 @@ function initSurvey() {
             }
         });
         sensorsScore = sensorsScore.toFixed(2);
+        embeddedScore = embeddedScore.toFixed(2);
+        visionScore = visionScore.toFixed(2);
+        uiScore = uiScore.toFixed(2);
         document.getElementById("recommendedTeam").textContent = recommendedTeamString;
         document.getElementById("embedded").textContent = "Embedded Score: " + embeddedScore.toString();
         document.getElementById("sensors").textContent = "Sensors & Navigation Score: " + sensorsScore.toString();
