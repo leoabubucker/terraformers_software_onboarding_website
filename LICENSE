@@ -1,17 +1,4 @@
-# Terraformers Software Onboarding Website
-A website hosting onboarding resources for Robotics at Maryland's (R@M) Terraformers Team.
-[https://terraformerssoftware.netlify.app](https://terraformerssoftware.netlify.app/)
-
-## Usage & Contribution Guidelines 
-As per the MIT License, all/any part(s) of this codebase may be forked and modified for use.
-
-Contribution: Pull requests will typically only be accepted from current or former members of Robotics at Maryland (R@M).
-
-## Contributors
-- Leo Abubucker (leoabubucker): Repository Owner
-
-## Software License
-[MIT](https://choosealicense.com/licenses/mit/)
+MIT License
 
 Copyright (c) 2026 Leo Abubucker
 
